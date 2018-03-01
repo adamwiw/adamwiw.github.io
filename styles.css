@@ -395,3 +395,7 @@ select {
 .btn-edit {
     display: none;
 }
+
+.btn-edit-header {
+    display: none;
+}

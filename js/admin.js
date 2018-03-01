@@ -72,12 +72,18 @@ function addEditListeners() {
         for (let i = 0; i < editButtons.length; i++) {
             editButtons[i].style.display = "flex";
         }
+        var headerEditButtons = document.getElementsByClassName("btn-edit-header");
+        for (let i = 0; i < headerEditButtons.length; i++) 
+            headerEditButtons[i].style.display = "flex";
         document.getElementById("product__sidebar-admin-edit-button").innerText = "Save";
         document.getElementsByClassName("product__sidebar-add")[0].style.display = "none";
     } else {
         for (let i = 0; i < editButtons.length; i++) {
             editButtons[i].style.display = "none";
         }
+        var headerEditButtons = document.getElementsByClassName("btn-edit-header");
+        for (let i = 0; i < headerEditButtons.length; i++) 
+            headerEditButtons[i].style.display = "none";
         document.getElementById("product__sidebar-admin-edit-button").innerText = "Enable Editing";
         document.getElementsByClassName("product__sidebar-add")[0].style.display = "flex";
     }
